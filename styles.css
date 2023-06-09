@@ -1,0 +1,147 @@
+body{
+    background-color:rgb(187, 221, 235);
+    color:rgb(139, 0, 30);
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color:rgb(5, 7, 0);
+}
+h2{
+    color:aqua;
+    
+    
+}
+p{
+    font-family: Georgia, serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+    color:rgb(49, 0, 139);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  
+  .box {
+    background-color: lightcyan; 
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid rgb(233, 9, 9);
+    margin: 50px;
+}
+.box1 {
+    background-color: rgb(255, 236, 224); 
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    border: 5px solid rgb(224, 185, 11);
+    margin: 50px;
+}
+.box2 {
+    background-color: rgb(225, 255, 224); 
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid rgb(171, 187, 101);
+    margin: 50px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  .container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  li>a {
+    padding: 8px 24px;
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  a {
+    color: white;
+    text-decoration:none;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+    
+    .nav-links {
+      display: none;
+    }
+  
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  }
+
+  @media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+    .button-menu-toggle {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+    }
+  
+  }
